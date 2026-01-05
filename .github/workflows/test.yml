@@ -14,9 +14,5 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v6
-      - name: setup uv
-        run: uv python install 3.10.10
-      - name: Install Dependency
-        run: uv sync
       - name: Test
-        run: uv run pytest test.py
+        run: pytest test.py
