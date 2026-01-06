@@ -64,8 +64,9 @@ def apply(
                              topk_group=topk_group,
                              scoring_func=scoring_func,
                              e_score_correction_bias=e_score_correction_bias,
-                             w1_bias = layer.w13_bias,
-                             w2_bias = layer.w2_bias)
+                             w1_bias=getattr(layer, 'w13_bias', None),
+                             w2_bias=getattr(layer, 'w2_bias', None),
+                             )
 
 UnquantizedFusedMoEMethod.apply = apply
 
