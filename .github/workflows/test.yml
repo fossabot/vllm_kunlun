@@ -22,7 +22,7 @@ jobs:
       #   run: pip install pytest
       - name: check env
         run: |
-          set -x  
+          set -euxo pipefail
           cat /etc/os-release
           pwd
           echo $PATH 
