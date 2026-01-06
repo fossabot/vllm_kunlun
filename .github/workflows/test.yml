@@ -15,7 +15,14 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v6
-      - name: Install dependencies
-        run: pip install pytest
+      # - name: Install dependencies
+      #   run: pip install pytest
+      - name: check env
+        run: |
+          cat /etc/os-release
+          which python
+          which pip
+          pip list
       - name: Test
-        run: pytest -sv test.py
+        run: python test.py
+      
