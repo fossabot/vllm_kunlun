@@ -22,5 +22,7 @@ jobs:
           cat /etc/os-release
           pwd
       - name: Test
-        run: pytest -sv test.py
+        run: |
+        source /root/.bashrc
+        pytest -sv test.py
       
