@@ -20,9 +20,6 @@ jobs:
       - name: check env
         run: |
           cat /etc/os-release
-          which python
-          which pip
-          pip list
       - name: Test
         run: python test.py
       
