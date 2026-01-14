@@ -5,7 +5,6 @@ def register_model():
     # from .demo_model import DemoModel  # noqa: F401
     from .qwen2_vl import Qwen2VLForConditionalGeneration #noqa: F401
     from .qwen2_5_vl import Qwen2_5_VLForConditionalGeneration #noqa: F401
-    from .qwen3 import Qwen3ForCausalLM #noqa: F401
     from .qwen3_moe import Qwen3MoeForCausalLM #noqa: F401
     from .qwen3_vl import Qwen3VLForConditionalGeneration
     from .qwen3_vl_moe import Qwen3VLMoeForConditionalGeneration
@@ -48,11 +47,7 @@ def register_model():
 
     ModelRegistry.register_model(
         "InternLM2ForCausalLM",
-        "vllm_kunlun.models.internlm2:InternLM2ForCausalLM")   
-
-    ModelRegistry.register_model(
-        "Qwen2ForCausalLM",
-        "vllm_kunlun.models.qwen2:Qwen2ForCausalLM")
+        "vllm_kunlun.models.internlm2:InternLM2ForCausalLM")
     
     ModelRegistry.register_model(
         "InternVLChatModel",
@@ -79,9 +74,24 @@ def register_model():
         "vllm_kunlun.models.seed_oss:SeedOssForCausalLM")
 
     ModelRegistry.register_model(
-        "LlamaForCausalLM",
-        "vllm_kunlun.models.llama:LlamaForCausalLM")
+        "MiMoV2FlashForCausalLM",
+        "vllm_kunlun.models.mimo_v2_flash:MiMoV2FlashForCausalLM")
 
+    ModelRegistry.register_model(
+        "GptOssForCausalLM",
+        "vllm_kunlun.models.gpt_oss:GptOssForCausalLM")   
+
+    ModelRegistry.register_model(
+        "DeepseekV3ForCausalLM",
+        "vllm_kunlun.models.deepseek_v2:DeepseekV3ForCausalLM")
+
+    ModelRegistry.register_model(
+        "DeepseekV32ForCausalLM",
+        "vllm_kunlun.models.deepseek_v2:DeepseekV3ForCausalLM")
+    
+    ModelRegistry.register_model(
+        "DeepSeekMTPModel",
+        "vllm_kunlun.models.deepseek_mtp:DeepSeekMTP")
 
 def register_quant_method():
     """to do"""
