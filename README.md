@@ -1,4 +1,5 @@
 ![vLLM Kunlun Logo](vllm_kunlun/patches/vLLM_Kunlun.jpg)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FWeiJie-520%2Fvllm_kunlun.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FWeiJie-520%2Fvllm_kunlun?ref=badge_shield)
 
 <p align="center">
   <a href="https://vllm-kunlun.readthedocs.io/en/latest/"><b>  Documentation</b></a> |
@@ -213,3 +214,6 @@ We sincerely appreciate the [**KunLunXin**](https://www.kunlunxin.com/) team for
 ## License
 
 Apache License 2.0, as found in the [LICENSE](./LICENSE) file.
+
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FWeiJie-520%2Fvllm_kunlun.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FWeiJie-520%2Fvllm_kunlun?ref=badge_large)
